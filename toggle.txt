@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Day and Night Toggle</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="toggle-wrapper">
+			<div class="toggle checkcross">
+				<input id="checkcross" type="checkbox">
+				<label class="toggle-item" for="checkcross">
+					<div class="check"></div>
+				</label>
+			</div>
+		</div>
+	</body>
+</html>

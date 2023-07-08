@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items-center;
+	background: #B399D4;
+}
+input
+{
+	height: 40px;
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 40px;
+	opacity: 0;
+}
+.toggle-wrapper
+{
+	position: relative;
+	width: 100%
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+label.toggle-item
+{
+	width: 7em;
+	height: 3em;
+	background: url(day.jpg);	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	border-radius: 50px;
+	margin: 40px;
+	position: relative;
+	border: 1px solid #fff;
+	transition: all 0.3s ease;
+	transform-origin: 20% center;
+	cursor: pointer;
+}
+.checkcross
+{
+	position: relative;
+	display: inline-block;
+}
+.checkcross .check
+{
+	position: absolute;
+	height: 2.5em;
+	width: 2.5em;
+	border-radius: 50%;
+	background: url(sun.jpg);	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.4s ease;
+	top: 4.5px;
+	left: 4.5px;
+}
+.checkcross .check::before,
+.checkcross .check::after
+{
+	position: absolute;
+	content: '';
+	height: 4px; 
+	border-radius: 10px;	
+	background: #fff;
+	transition: 0.4s ease
+}
+#checkcross:checked + label .check
+{
+	left: 68px;
+	transform: rotate(360deg);
+	background: url(moon.jpeg);	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#checkcross:checked + label.toggle-item
+{
+	background: url(night.jpg);	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+}
